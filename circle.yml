@@ -19,4 +19,6 @@ deployment:
     branch: master
     commands:
       - npm install -g firebase-tools
-      - firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+      - yarn run build
+      - firebase login --email $FIREBASE_USERNAME --password $FIREBASE_PASSWORD
+      - firebase deploy
