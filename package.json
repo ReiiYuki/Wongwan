@@ -1,0 +1,14 @@
+{
+  "name": "Wongwan",
+  "version": "1.0.0",
+  "description": "-",
+  "main": "index.js",
+  "repository": "https://github.com/ReiiYuki/Wongwan.git",
+  "author": "Voraton Lertrattanapaisal <iguru.shou.5410070@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1"
+  }
+}
