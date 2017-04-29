@@ -10,6 +10,8 @@ dependencies:
   cache_directories:
     - ~/.yarn-cache
   override:
+    - npm install -g firebase-tools
+    - npm install
     - yarn
 test:
   override:
@@ -18,6 +20,5 @@ deployment:
   master:
     branch: master
     commands:
-      - npm install -g firebase-tools
       - yarn run build
       - firebase deploy --token "$FIREBASE_DEPLOY_TOKEN" --non-interactive
