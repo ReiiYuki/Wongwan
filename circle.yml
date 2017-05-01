@@ -19,5 +19,6 @@ deployment:
   master:
     branch: master
     commands:
+      - cd ~/Wonwan/functions && yarn
       - yarn run build
       - firebase deploy --token "$FIREBASE_DEPLOY_TOKEN" --non-interactive
