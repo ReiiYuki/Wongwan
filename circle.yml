@@ -10,7 +10,6 @@ dependencies:
   cache_directories:
     - ~/.yarn-cache
   override:
-    - npm install -g firebase-tools
     - yarn
 test:
   override:
@@ -19,6 +18,7 @@ deployment:
   master:
     branch: master
     commands:
+      - npm install -g firebase-tools
       - cd ~/Wonwan/functions && yarn
       - yarn run build
       - firebase deploy --token "$FIREBASE_DEPLOY_TOKEN" --non-interactive
